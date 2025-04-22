@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie Rekrutacyjne 2023 - Vanilla JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/e85828e76a.js"
+      crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="nav-bar">
+          <ul>
+            <li class="logo">
+              <a href="#"><img src="/images/logo.png" alt="logo" /> </a>
+            </li>
+            <li id="sub-menu">
+              Oferta <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-list">
+                <li><a href="#intro">Projekty</a></li>
+                <li><a href="#">Wizualizacje</a></li>
+                <li><a href="#">Realizacje</a></li>
+              </ul>
+            </li>
+            <li><a href="#aboutUs">O firmie</a></li>
+            <li><a href="">Realizacje</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li class="magnifying-glass">
+              <i class="fa-solid fa-magnifying-glass">
+                <input id="searchInput" type="text " placeholder=""
+              /></i>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="intro">
+          <div class="intro">
+            <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+            <p>
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </p>
+            <div class="intro-btns">
+              <button class="introBtn">Skontaktuj się z nami</button>
+              <button class="introBtn">
+                Zobacz nasze realizacje
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="introGallery">
+            <div id="slider"></div>
+            <button id="prev" class="gallerytBtn">
+              <i class="fa-solid fa-arrow-left"></i></button
+            ><button id="next" class="gallerytBtn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+        <section id="offer">
+          <div class="offer">
+            <h6>Oferta</h6>
+            <h3>Działamy <i>kompleksowo</i></h3>
+            <p>
+              Oferujemy kompletną obsługe inwestycji terenów zielonych.
+              Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+              Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
+              życie, a na każdym etapie posłużymy radą i wieloletnim
+              doświadczeniem.
+            </p>
+          </div>
+          <div class="offer offers">
+            <div class="offerSquare">
+              <i class="fa-solid fa-pencil fa-flip-horizontal"></i>
+              <h4>Projekty</h4>
+              <p>
+                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                wykorzystaniem istniejącej przestrzeni.
+              </p>
+              <button>
+                Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="offerSquare">
+              <i class="fa-solid fa-eye"></i>
+              <h4>Wizualizacje</h4>
+              <p>
+                Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                spaceru animowanego w technologii 3D.
+              </p>
+              <button>
+                Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="offerSquare">
+              <i class="fa-solid fa-star"></i>
+              <h4>Realizacje</h4>
+              <p>
+                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                zaawansowanych technologii.
+              </p>
+              <button>
+                Zobacz nasze realizacje
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="aboutUs">
+          <div class="aboutUs img"></div>
+          <div class="aboutUs">
+            <h6>O firmie</h6>
+            <h3>Tworzymy z <i>pasją</i></h3>
+            <p>
+              Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+              wykwalfikowani projektanci oraz architekci, których zadaniem jest
+              rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+              specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+              minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+              małoobsługowe, dostosowane do współczesnego trybu życia.
+            </p>
+            <button>
+              Poznaj nas bliżej <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+        <section id="realizations">
+          <h6>Realizacje</h6>
+          <h3>Nasze <i>projekty</i></h3>
+
+          <h1>Gallery</h1>
+          <div class="grid">
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--width2 grid-item--height2"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--width3"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item grid-item--width2 grid-item--height3"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--width2 grid-item--height2"></div>
+            <div class="grid-item grid-item--width2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height3"></div>
+            <div class="grid-item grid-item--height2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item grid-item--height2"></div>
+          </div>
+          
+          
+
+          <button>Rozwiń <i class="fa-solid fa-arrow-down"></i></button>
+        </section>
+        <section id="contact">
+          <div class="contact">
+            <div>
+              <h3>Zostańmy w kontakcie!</h3>
+              <h3>Znajdziesz nas na <i>Instagramie</i>.</h3>
+            </div>
+            <div>
+              <h6>Śledź nasze najnowsze realizacje!</h6>
+              <button>
+                <a href="https://www.instagram.com/">Instagram</a>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
